@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    async function getData(){
+        let data={
+                    "id": 4,
+                    "name": "Chocolate",
+                    "price": 6,
+                    "active": true
+                    };
+        let response=await fetch(`http://localhost:5000/api/products/4`,{
+            method:"DELETE",
+           
+        });
+        let res=await response.json();
+    }
+        getData()
+
+</script>
+</html>
